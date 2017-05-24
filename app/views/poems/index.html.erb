@@ -13,6 +13,7 @@
   </thead>
 
   <tbody>
+    
     <% @poems.each do |poem| %>
       <tr>
         <td><%= poem.title %></td>
@@ -20,8 +21,8 @@
         <td><%= poem.auther %></td>
         <td><%= link_to 'Show', poem %></td>
         <td><%= link_to 'Edit', edit_poem_path(poem) %></td>
-        <td><%= link_to 'Destroy', poem, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+        <td><%= link_to 'Destroy',poem,method: :delete,data: { confirm: 'Are you sure?' } %></td>
+    
     <% end %>
   </tbody>
 </table>

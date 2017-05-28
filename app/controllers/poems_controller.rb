@@ -60,7 +60,7 @@ class PoemsController < ApplicationController
    def destroy
     @poem.destroy
     respond_to do |format|
-      format.html { redirect_to root_path, notice: 'Poem was successfully destroyed.' }
+      format.html { redirect_to poems_url, notice: 'Poem was successfully destroyed.' }
       format.json { head :no_content }
     end
    end
